@@ -12,7 +12,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter  # To break 
 from langchain_huggingface import HuggingFaceEmbeddings  # For generating vector embeddings
 from langchain_community.vectorstores import FAISS  # FAISS for storing and searching vectors
 from langchain_groq import ChatGroq  # Interface to use Groq's LLM
-from langchain.chains import RetrievalQA  # QA chain using retrieval + LLM
+from langchain_community.chains import RetrievalQA  # QA chain using retrieval + LLM
 from langchain_community.document_loaders import PyPDFLoader  # To load PDF files
 
 from streamlit.components.v1 import html  # For custom HTML like JS injection
@@ -559,4 +559,5 @@ def run_app():
 # --- Run the application ---
 if __name__ == "__main__":
     run_app()
+
 
