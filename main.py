@@ -251,7 +251,7 @@ def run_retrieval_query(llm, vector_store, question):
     )
 
     final_prompt = prompt.format(context=context, question=question)
-    answer = llm.invoke(final_prompt).content
+    answer = llm.invoke([{"role": "user", "content": final_prompt}]).content
 
     return answer, docs
 
@@ -391,3 +391,4 @@ def run_app():
 # --- Run App ---
 if __name__ == "__main__":
     run_app()
+
