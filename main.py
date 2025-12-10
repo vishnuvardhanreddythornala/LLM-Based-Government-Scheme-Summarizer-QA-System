@@ -8,7 +8,7 @@ import os  # For managing files and directories
 
 # LangChain and HuggingFace components for document loading and question answering
 from langchain_community.document_loaders import UnstructuredURLLoader  # To load content from URLs
-from langchain.text_splitter import RecursiveCharacterTextSplitter  # To break large text into smaller chunks
+from langchain_text_splitters import RecursiveCharacterTextSplitter  # To break large text into smaller chunks
 from langchain_huggingface import HuggingFaceEmbeddings  # For generating vector embeddings
 from langchain_community.vectorstores import FAISS  # FAISS for storing and searching vectors
 from langchain_groq import ChatGroq  # Interface to use Groq's LLM
@@ -559,3 +559,4 @@ def run_app():
 # --- Run the application ---
 if __name__ == "__main__":
     run_app()
+
