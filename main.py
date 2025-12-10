@@ -13,8 +13,9 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 
-# New LangChain retrieval chain API (replaces RetrievalQA)
-from langchain.chains import create_retrieval_chain
+from langgraph.prebuilt import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -425,3 +426,4 @@ def run_app():
 # ------------------- Entrypoint -------------------
 if __name__ == "__main__":
     run_app()
+
