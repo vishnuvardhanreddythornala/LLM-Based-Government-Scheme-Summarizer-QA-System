@@ -16,7 +16,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 
 # UPDATED NEW LANGCHAIN IMPORT (Fix!!)
-from langchain.chains.retrieval import RetrievalQA
+from langchain_community.chains.retrieval_qa.base import RetrievalQA
 
 from streamlit.components.v1 import html
 
@@ -562,6 +562,7 @@ def run_app():
 # --- Run the application ---
 if __name__ == "__main__":
     run_app()
+
 
 
 
