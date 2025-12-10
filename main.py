@@ -1,21 +1,24 @@
 # --- Import necessary libraries ---
-import configparser  # For reading API key from config file
-import streamlit as st  # Streamlit to build the web interface
-import pickle  # For saving and loading FAISS index (no longer used directly here)
-import logging  # To log application activity and errors
-from datetime import datetime  # For timestamped logging
-import os  # For managing files and directories
+import configparser
+import streamlit as st
+import pickle
+import logging
+from datetime import datetime
+import os
 
 # LangChain and HuggingFace components for document loading and question answering
-from langchain_community.document_loaders import UnstructuredURLLoader  # To load content from URLs
-from langchain_text_splitters import RecursiveCharacterTextSplitter  # To break large text into smaller chunks
-from langchain_huggingface import HuggingFaceEmbeddings  # For generating vector embeddings
-from langchain_community.vectorstores import FAISS  # FAISS for storing and searching vectors
-from langchain_groq import ChatGroq  # Interface to use Groq's LLM
-from langchain_community.chains import RetrievalQA  # QA chain using retrieval + LLM
-from langchain_community.document_loaders import PyPDFLoader  # To load PDF files
+from langchain_community.document_loaders import UnstructuredURLLoader
+from langchain_community.document_loaders import PyPDFLoader
 
-from streamlit.components.v1 import html  # For custom HTML like JS injection
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_groq import ChatGroq
+
+# UPDATED NEW LANGCHAIN IMPORT (Fix!!)
+from langchain.chains.retrieval import RetrievalQA
+
+from streamlit.components.v1 import html
 
 # Set page config for wide layout
 st.set_page_config(page_title="Smart Scheme Research App", layout="wide")
@@ -559,5 +562,6 @@ def run_app():
 # --- Run the application ---
 if __name__ == "__main__":
     run_app()
+
 
 
