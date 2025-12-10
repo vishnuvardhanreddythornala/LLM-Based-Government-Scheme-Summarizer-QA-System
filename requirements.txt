@@ -5,6 +5,7 @@ langchain_community
 langchain-huggingface
 langchain-text-splitters
 langchain-groq
+langchain-experimental
 sentence-transformers
 faiss-cpu
 transformers
