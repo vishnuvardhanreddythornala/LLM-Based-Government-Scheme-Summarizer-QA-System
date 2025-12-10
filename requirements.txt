@@ -3,7 +3,7 @@ PyMuPDF
 langchain
 langchain-community
 langchain-huggingface
-langchain_text_splitters
+langchain-text-splitters
 langchain-groq
 sentence-transformers
 faiss-cpu
@@ -12,4 +12,5 @@ torch
 accelerate
 python-dotenv
 unstructured[local-inference]
+
 
