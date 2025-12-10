@@ -14,9 +14,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
-
-# UPDATED NEW LANGCHAIN IMPORT (Fix!!)
-from langchain_community.chains.retrieval_qa.base import RetrievalQA
+from langchain_experimental.chains import RetrievalQA
 
 from streamlit.components.v1 import html
 
@@ -562,6 +560,7 @@ def run_app():
 # --- Run the application ---
 if __name__ == "__main__":
     run_app()
+
 
 
 
