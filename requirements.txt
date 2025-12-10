@@ -1,6 +1,7 @@
 streamlit
 PyMuPDF
 langchain
+langgraph
 langchain_community
 langchain-huggingface
 langchain-text-splitters
@@ -12,3 +13,4 @@ torch
 accelerate
 python-dotenv
 unstructured[local-inference]
+
