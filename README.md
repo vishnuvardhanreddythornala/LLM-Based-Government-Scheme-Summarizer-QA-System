@@ -7,7 +7,6 @@
 ## 📑 Table of Contents
 
 - [About the Project](#about-the-project)
-- [Demo](#demo)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
@@ -30,12 +29,6 @@ This project solves that by enabling users to input scheme URLs or upload PDFs, 
 
 It combines document parsing, semantic search, and LLM-powered QA to deliver an intelligent, research-friendly interface.
 
-
-## 🎥 Demo
-
-> [https://smart-scheme-research-app.streamlit.app/]
-
-
 ## 🗂 Demo: Government Scheme Links
 
 Use these sample government scheme URLs to try the app:
@@ -45,8 +38,6 @@ Use these sample government scheme URLs to try the app:
 - 🔗 [ Employment Linked Incentive Scheme – Sarkari Yojana](https://sarkariyojana.com/employment-linked-incentive-scheme/#google_vignette)
 
 📌 Tip: Paste any of these URLs in the sidebar under “URLs” and click “Process” to test.
-
-
 
 ## ✨ Features
 
@@ -60,8 +51,6 @@ Use these sample government scheme URLs to try the app:
 - 📂 Track source documents and download PDFs.
 - 🧠 Built on LangChain + FAISS for scalable document QA.
 
-
-
 ## 🛠️ Tech Stack
 
 - **Python**
@@ -74,8 +63,8 @@ Use these sample government scheme URLs to try the app:
 
 ## 🧬 Clone the Repository
 ```
-git clone https://github.com/vishnuvardhanreddythornala/scheme-research-tool.git
-cd scheme-research-tool
+git clone https://github.com/YeldandiLasya/LLM-Based-Government-Scheme-Summarizer-QA-System.git
+cd LLM-Based-Government-Scheme-Summarizer-QA-System
 
 ```
 
@@ -86,7 +75,7 @@ cd scheme-research-tool
 git clone https://github.com/yourusername/scheme-research-tool.git
 
 # Navigate to the project folder
-cd Scheme-Research-Application
+cd LLM-Based-Government-Scheme-Summarizer-QA-System
 
 # Create a virtual environment (optional but recommended)
 python -m venv venv
@@ -149,9 +138,3 @@ scheme-research-tool/
 - Integrating more robust analytics for query and feedback logs.
 - Enhancing support for multilingual documents.
 
-
-## 📞 Contact
-
-- Name  : Thornala Vishnu Vardhan Reddy
-- GitHub: [@vishnuvardhanreddythornala(https://github.com/vishnuvardhanreddythornala)
-- Email : [vishnuvardhanreddythornala@gmail.com]
